@@ -189,7 +189,7 @@ public class RootServiceManager implements Handler.Callback {
             }
 
             // Only support debugging on SDK >= 27
-            if (Build.VERSION.SDK_INT >= 27 && Debug.isDebuggerConnected()) {
+            if (Build.VERSION.SDK_INT >= 27 && Debug.isDebuggerConnected() && false) {
                 env += DEBUG_ENV + "=1 ";
                 // Reference of the params to start jdwp:
                 // https://developer.android.com/ndk/guides/wrap-script#debugging_when_using_wrapsh
